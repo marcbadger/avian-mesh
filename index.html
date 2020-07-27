@@ -1,2 +1,198 @@
-<h1>Project website for 3D Bird Reconstruction: a Dataset, Model, and Shape Recovery from a Single View (ECCV 2020).
-Authors Marc Badger, Yufu Wang, Adarsh Modh, Ammon Perkes, Nikos Kolotouros, Bernd G. Pfrommer, Marc F. Schmidt, Kostas Daniilidis.</h1>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+                               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>SPIN</title>
+
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106409174-1"></script>
+  	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments)};
+  	gtag('js', new Date());
+  	gtag('config', 'UA-106409174-1');
+  	</script>
+    </head>
+    <body class="container" style="max-width:920px">
+
+        <!-- Title -->
+        <div>
+            <div class='row mt-5 mb-5'>
+                <div class='col text-center'>
+                    <p class="h2 font-weight-normal">3D Bird Reconstruction: a Dataset, Model, and Shape Recovery from a Single View</p>
+                </div>
+            </div>
+
+            <!-- authors -->
+            <div class='row text-center h5 font-weight-bold mb-4'>
+		    <a class="col-md-3 col-xs-6" href="https://www.seas.upenn.edu/~mbadger"><span>Marc Badger<sup>1</sup></span></a>
+		    <a class="col-md-3 col-xs-6" href="https://www.grasp.upenn.edu/people/yufu-wang"><span>Yufu Wang<sup>1</sup></span></a>
+		    <a class="col-md-3 col-xs-6" href="https://www.seas.upenn.edu/~adarshm"><span>Adarsh Modh<sup>1</sup></span></a>
+
+		    <a class="col-md-3 col-xs-6" href="https://web.sas.upenn.edu/marcschmidtlab/pages/people/"><span>Ammon Perkes<sup>1</sup></span></a>
+		    <a class="col-md-3 col-xs-6" href="https://www.seas.upenn.edu/~nkolot"><span>Nikos Kolotouros<sup>1</sup></span></a>
+		    
+		    <a class="col-md-3 col-xs-6" href="http://pfrommer.us"><span>Bernd G. Pfrommer<sup>1</sup></span></a>
+		    
+		    <a class="col-md-3 col-xs-6" href="https://web.sas.upenn.edu/marcschmidtlab/pages/people/"><span>Marc F. Schmidt<sup>1</sup></span></a>
+		    
+		    <a class="col-md-3 col-xs-6" href="https://www.cis.upenn.edu/~kostas"><span>Kostas Daniilidis<sup>1</sup></span></a>
+            </div>
+
+
+            <!-- affiliations -->
+            <div class='row text-center mt-1 mb-1' >
+		    <a class="col-md-6" href="https://www.upenn.edu/"><span><sup>1</sup>University of Pennsylvania</span></a>
+            </div>
+
+            <div class='row text-center font-weight-light mt-2 mb-2'>
+                <span class="col-md-12 col-xs-12" style="color:#007bff">*Equal contribution</span>
+            </div>
+
+	    <div>
+      	    <video width=100% src="files/teaser.mp4" type="video/mp4" autoplay muted loop/>
+	    </div>
+        </div>
+
+        <!-- Paper section -->
+        <div>
+            <hr>
+            <div class='row'>
+                <div class='col-md-3 col-sm-3 col-xs-12 text-center col-sm-3'>
+                    <div class="row mt-4">
+                        <a href="https://arxiv.org/" style="max-width:200px; margin-left:auto; margin-right:auto">
+                            <img src="files/paper.png" alt="paper-snapshot" class="img-thumbnail" width="80%" style="box-shadow: 10px 10px 5px grey;">
+                        </a>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <a class="h5" href="https://arxiv.org/" style="margin-right:10px">
+                                <span>[Arxiv]</span>
+                            </a>
+                            <a class="h5" href="files/bird-supp.pdf" style="margin-right:10px">
+                                <span>[Supplementary]</span>
+                            </a>
+                            <a class="h5" href="https://github.com/marcbadger/avian-mesh" style="margin-right:10px">
+                                <span>[Code]</span>
+                            </a>
+                            <a class="h5" href="files/.bib" target="_blank">
+                                <span>[Bibtex]</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-9 col-sm-9 col-xs-12'>
+                    <p class='h4 font-weight-bold '>Abstract</p>
+                    <p> 
+			Automated capture of animal pose is transforming how we study neuroscience and social behavior. 
+			Movements carry important so- cial cues, but current methods are not able to robustly estimate pose and shape of animals, particularly for social animals such as birds, which are often occluded by each other and objects in the environment. 
+			To address this problem, we first introduce a model and multi-view optimization approach, which we use to capture the unique shape and pose space dis- played by live birds. 
+			We then introduce a pipeline and experiments for keypoint, mask, pose, and shape regression that recovers accurate avian postures from single views. 
+			Finally, we provide extensive multi-view key- point and mask annotations collected from a group of 15 social birds housed together in an outdoor aviary. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video
+        <div>
+            <hr>
+
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2 mr-3'>Video</p>
+                </div>
+            </div>
+
+
+            <div class='row mt-3 text-center center-block' style=" margin-left:auto; margin-right:auto; max-width:560px">
+                <div class='col ml-1 mr-1' style="position: relative; width: 100%;height: 0;padding-bottom: 56%;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/jqBiv77xC0M" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        style="position: absolute;width: 100%;height: 100%; left: 0; top: 0;"
+                    >
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+	-->
+
+
+        <!-- Architecture, explaination -->
+        <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>SPIN: SMPL oPtimization IN the loop</p>
+                </div>
+            </div>
+
+            <div class='row mt-3'>
+            <div class='col-md-6 col-sm-6 col-xs-12 mt-4'>
+      	    	<video width=100% src="files/teaser.mp4" type="video/mp4" autoplay muted loop/>
+	    </div>
+                <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-5'>
+                    <p class="text-break">
+		    Given an input image containing a person, a neural network regresses the full 3D shape of the person.
+		    This regressed shape is used to initialize an iterative optimization procedure that fits the body model to the 2D joints <emph>within</emph> the training loop.
+		    Starting from a reasonable initialization the fitting procedure is faster and more accurate.
+		    The output of the optimization is then used to supervise the network with a direct parameter loss.
+		    Our approach is self-improving by nature, since better network estimates lead the optimization to better solutions, while more accurate optimization fits provide better supervision for the network
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Results, transformation -->
+        <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>Results</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div>
+			<p>Here we show some results on videos from the <a href=http://virtualhumans.mpi-inf.mpg.de/3DPW/>3DPW</a> dataset. We note that our network was not trained with data from this dataset. Also we do not perform any postprocessing, e.g., temporal smoothing.</p>
+      	    	    <video width=100% src="files/downtown_runForBus_01.mp4" type="video/mp4" autoplay muted loop/>
+                </div>
+                <div>
+      	    	    <video width=100% src="files/downtown_walking_00.mp4" type="video/mp4" autoplay muted loop/>
+                </div>
+                <div>
+      	    	    <video width=100% src="files/downtown_sitOnStairs_00.mp4" type="video/mp4" autoplay muted loop/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ack -->
+        <div>
+            <hr>
+
+            <div class='row mb-5 text-center'>
+                <div class='col'>
+                    <p class='h2'>Acknowledgements</p>
+		    <div class='text-left'>
+		    <p>NK, GP and KD gratefully appreciate support through the following grants: NSF-IIP-1439681 (I/UCRC),
+		    NSF-IIS-1703319, NSF MRI 1626008, ARL RCTA W911NF-10-2-0016,
+		    ONR N00014-17-1-2093, ARL DCIST CRA W911NF-17-2-0181,
+		    the DARPA-SRC C-BRIC, by Honda Research Institute and a Google Daydream Research Award.</p>
+		    <p><strong>Disclosure:</strong> MJB has received research gift funds from Intel, Nvidia, Adobe, Facebook, and Amazon. While MJB is a part-time employee of Amazon, his research was performed solely at, and funded solely by, MPI. MJB has financial interests in Amazon and Meshcapade GmbH.</p> 
+		    <p>The design of this project page was based on <a href="https://www.guandaoyang.com/PointFlow/">this</a> website.
+		    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
