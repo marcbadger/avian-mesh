@@ -78,8 +78,8 @@
 			-->
 
 			   
-	    <div>
-      		<table align=center>
+	    <div class='row mt-5'>
+      		<table align=center width=800px>
                 <tr>
                 	<td >
                       <center>
@@ -88,7 +88,7 @@
                     </center>
                     </td>
                 </tr>
-                    <td width=1000px>
+                    <td width=600px>
                       <center>
                           <span style="font-size:14px"><i>We estimate the 3D pose and shape of birds from a single view. Given a detection and associated bounding box, we predict body keypoints and a mask. We then predict the parameters of an articulated avian mesh model, which provides a good initial estimate for optional further optimization.</i>
                     </center>
@@ -97,23 +97,6 @@
             </table>
 	    </div>
 	    
-	    <div>
-      		<table align=center width=600px>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:14px"><i>The dataset and model. We provide multi-view segmentation masks for over 6300 bird instances, keypoints for 1000 bird instances, the first articulated 3D mesh model of a bird, and a full pipeline for recovering the shape and pose of birds from single views.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-	    </div>
 
         <!-- Paper section -->
         <div>
@@ -121,7 +104,7 @@
             <div class='row'>
                 <div class='col-md-3 col-sm-3 col-xs-12 text-center col-sm-3'>
                     <div class="row mt-4">
-                        <a href="files/bird.pdf" style="max-width:200px; margin-left:auto; margin-right:auto">
+                        <a href="files/3d_birds_singleview.pdf" style="max-width:200px; margin-left:auto; margin-right:auto">
                             <img src="files/paper.png" alt="paper-snapshot" class="img-thumbnail" width="80%" style="box-shadow: 10px 10px 5px grey;">
                         </a>
                     </div>
@@ -130,7 +113,7 @@
                             <a class="h5" href="https://arxiv.org" style="margin-right:10px">
                                 <span>[Arxiv]</span>
                             </a>
-                            <a class="h5" href="files/bird-supp.pdf" style="margin-right:10px">
+                            <a class="h5" href="files/3d_birds_singleview-supp.pdf" style="margin-right:10px">
                                 <span>[Supplementary]</span>
                             </a>
                             <a class="h5" href="https://github.com/marcbadger/avian-mesh" style="margin-right:10px">
@@ -146,16 +129,16 @@
                     <p class='h4 font-weight-bold '>Abstract</p>
                     <p> 
 			Automated capture of animal pose is transforming how we study neuroscience and social behavior. 
-			Movements carry important so- cial cues, but current methods are not able to robustly estimate pose and shape of animals, particularly for social animals such as birds, which are often occluded by each other and objects in the environment. 
-			To address this problem, we first introduce a model and multi-view optimization approach, which we use to capture the unique shape and pose space dis- played by live birds. 
+			Movements carry important social cues, but current methods are not able to robustly estimate pose and shape of animals, particularly for social animals such as birds, which are often occluded by each other and objects in the environment. 
+			To address this problem, we first introduce a model and multi-view optimization approach, which we use to capture the unique shape and pose space displayed by live birds. 
 			We then introduce a pipeline and experiments for keypoint, mask, pose, and shape regression that recovers accurate avian postures from single views. 
-			Finally, we provide extensive multi-view key- point and mask annotations collected from a group of 15 social birds housed together in an outdoor aviary. 
+			Finally, we provide extensive multi-view keypoint and mask annotations collected from a group of 15 social birds housed together in an outdoor aviary. 
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Video
+        <!-- Youtube Video
         <div>
             <hr>
 
@@ -181,29 +164,112 @@
         </div>
 	-->
 
+        <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>Dataset</p>
+                </div>
+            </div>
+
+			<div class='row mt-3'>
+	      		<table align=center width=1000px>
+	                <tr>
+	                    <td>
+	                      <center>
+	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
+	      	    				<video width=100% src="files/timelapse.mp4" type="video/mp4" autoplay muted loop/>
+	                    </center>
+	                    </td>
+	                </tr>
+	                    <td width=800px>
+	                      <center>
+	                          <span style="font-size:14px"><i>TODO: Caption for timelapse</i>
+	                    </center>
+	                    </td>
+	                </tr>
+	            </table>
+		    </div>
+
+	
+			<div class='row mt-5'>
+	      		<table align=center width=1000px>
+	                <tr>
+	                    <td>
+	                      <center>
+	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
+	                      	  <img width=100% src="files/dataset_w_mask.png" type="image/png"/>
+	                    </center>
+	                    </td>
+	                </tr>
+	                    <td width=800px>
+	                      <center>
+	                          <span style="font-size:14px"><i>The dataset and model. We provide multi-view segmentation masks for over 6300 bird instances, keypoints for 1000 bird instances, the first articulated 3D mesh model of a bird, and a full pipeline for recovering the shape and pose of birds from single views.</i>
+	                    </center>
+	                    </td>
+	                </tr>
+	            </table>
+		    </div>
+
+			<div class='row mt-3'>
+	      		<table align=center width=1000px>
+	                <tr>
+	                    <td>
+            	            <div class = 'row'>
+				            	<div class='row mt-1 col-md-6 col-sm-6 col-xs-12 mt-4'>
+				      	    		<video width=100% src="files/mask_predictions.mp4" type="video/mp4" autoplay muted loop/>
+					    		</div>
+
+					    		<div class='row mt-1 col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
+		                      		<img width=100% src="files/mask_instance.png" type="image/png"/>
+				                </div>
+				            </div>
+	                    </td>
+	                </tr>
+	                    <td width=800px>
+	                      <center>
+	                          <span style="font-size:14px"><i>TODO - caption for Mask Predictions</i>
+	                    </center>
+	                    </td>
+	                </tr>
+	            </table>
+		    </div>
+
+			<div class='row mt-5'>
+	      		<table align=center width=1000px>
+	                <tr>
+	                    <td>
+	                      <center>
+	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
+	      	    				<video width=100% src="files/multiview.mp4" type="video/mp4" autoplay muted loop/>
+	                    </center>
+	                    </td>
+	                </tr>
+	                    <td width=800px>
+	                      <center>
+	                          <span style="font-size:14px"><i>TODO - Caption for Multi-view dataset</i>
+	                    </center>
+	                    </td>
+	                </tr>
+	            </table>
+		    </div>
+        </div>
 
         <!-- Architecture, explaination -->
         <div>
             <hr>
             <div class='row text-center'>
                 <div class='col'>
-                    <p class='h2'>SPIN: SMPL oPtimization IN the loop</p>
+                    <p class='h2'>Overview</p>
                 </div>
             </div>
 
             <div class='row mt-3'>
-            <div class='col-md-6 col-sm-6 col-xs-12 mt-4'>
-      	    	<video width=100% src="files/teaser.mp4" type="video/mp4" autoplay muted loop/>
-	    </div>
-                <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-5'>
-                    <p class="text-break">
-		    Given an input image containing a person, a neural network regresses the full 3D shape of the person.
-		    This regressed shape is used to initialize an iterative optimization procedure that fits the body model to the 2D joints <emph>within</emph> the training loop.
-		    Starting from a reasonable initialization the fitting procedure is faster and more accurate.
-		    The output of the optimization is then used to supervise the network with a direct parameter loss.
-		    Our approach is self-improving by nature, since better network estimates lead the optimization to better solutions, while more accurate optimization fits provide better supervision for the network
-                    </p>
-                </div>
+            
+	            <div>
+	      	    	<video controls width=100% src="files/teaser.mp4" type="video/mp4"/>
+		    	</div>
+	           
             </div>
 
 
@@ -219,14 +285,13 @@
             </div>
             <div class='row'>
                 <div>
-			<p>Here we show some results on videos from the <a href=http://virtualhumans.mpi-inf.mpg.de/3DPW/>3DPW</a> dataset. We note that our network was not trained with data from this dataset. Also we do not perform any postprocessing, e.g., temporal smoothing.</p>
-      	    	    <video width=100% src="files/downtown_runForBus_01.mp4" type="video/mp4" autoplay muted loop/>
+			<p>(TODO - Maybe better descriptions for results) Here we show some of the results from our pipeline. They depict the regression-based recovery of bird pose and shape from a single view. Each panel shows the input image and the output refined mesh.</p>
+	            	<img width=100% src="files/pipeline_results.png" type="image/png"/>
                 </div>
-                <div>
-      	    	    <video width=100% src="files/downtown_walking_00.mp4" type="video/mp4" autoplay muted loop/>
-                </div>
-                <div>
-      	    	    <video width=100% src="files/downtown_sitOnStairs_00.mp4" type="video/mp4" autoplay muted loop/>
+
+                <div class='row mt-5'>
+			<p>Our mesh, pose regression networks, and single-view optimization procedure generalize to similar bird species in CUB-200 using distributions of shape and pose extracted from our multi-view dataset.</p>
+	            	<img width=100% src="files/cub200predictions.png" type="image/png"/>
                 </div>
             </div>
         </div>
