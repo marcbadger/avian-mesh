@@ -89,8 +89,8 @@
                 <tr>
                 	<td >
                       <center>
-                      	<img width=100% src="files/method.gif" type="image/gif"/>
-                        <!-- <a href="files/method.gif"><img src = "files/method.gif" height="234px"></img></href></a><br> -->
+                      	<video width=100% src="files/method.mp4" type="video/mp4" autoplay muted loop/>
+                        <!-- <img width=100% src="files/method.gif" type="image/gif"/> -->
                     </center>
                     </td>
                 </tr>
@@ -190,7 +190,7 @@
 	                </tr>
 	                    <td width=800px>
 	                      <center>
-	                          <span style="font-size:14px"><i>TODO: Caption for timelapse</i>
+	                          <span style="font-size:14px"><i>Our dataset captures the social interactions of 15 cowbirds housed together in an outdoor aviary over the course of a three-month mating season.</i>
 	                    </center>
 	                    </td>
 	                </tr>
@@ -210,7 +210,7 @@
 	                </tr>
 	                    <td width=800px>
 	                      <center>
-	                          <span style="font-size:14px"><i>The dataset and model. We provide multi-view segmentation masks for over 6300 bird instances, keypoints for 1000 bird instances, the first articulated 3D mesh model of a bird, and a full pipeline for recovering the shape and pose of birds from single views.</i>
+	                          <span style="font-size:14px"><i>We provide multi-view segmentation masks for over 6300 bird instances, keypoints for 1000 bird instances, an articulated 3D mesh model of a bird, and a full pipeline for recovering the shape and pose of birds from single views. See our <a href="https://github.com/marcbadger/avian-mesh">code</a> for details.</i>
 	                    </center>
 	                    </td>
 	                </tr>
@@ -222,19 +222,19 @@
 	                <tr>
 	                    <td>
             	            <div class = 'row'>
-				            	<div class='col-md-6 col-sm-6 col-xs-12 mt-1'>
-				      	    		<video width=100% src="files/mask_predictions.mp4" type="video/mp4" autoplay muted loop/>
-					    		</div>
-
 					    		<div class='col-md-6 col-sm-6 col-xs-12 mt-1'>
 		                      		<img width=100% src="files/mask_instance.png" type="image/png"/>
 				                </div>
+
+                                <div class='col-md-6 col-sm-6 col-xs-12 mt-1'>
+                                    <video width=100% src="files/mask_predictions.mp4" type="video/mp4" autoplay muted loop/>
+                                </div>
 				            </div>
 	                    </td>
 	                </tr>
 	                    <td width=800px>
 	                      <center>
-	                          <span style="font-size:14px"><i>TODO - caption for Mask Predictions</i>
+	                          <span style="font-size:14px"><i>We detect bird instances using a Mask R-CNN pretrained on COCO instance segmentation, which we fine-tune for birds. Frame-by-frame predictions are stable across time and we achieve excellent generalization to unseen days and across seasons.</i>
 	                    </center>
 	                    </td>
 	                </tr>
@@ -253,7 +253,7 @@
 	                </tr>
 	                    <td width=800px>
 	                      <center>
-	                          <span style="font-size:14px"><i>TODO - Caption for Multi-view dataset</i>
+	                          <span style="font-size:14px"><i>We fit our avian mesh to the annotated multi-view dataset and extract distributions for shape and pose of birds in the aviary.</i>
 	                    </center>
 	                    </td>
 	                </tr>
@@ -289,17 +289,18 @@
                     <p class='h2'>Results</p>
                 </div>
             </div>
-            <div class='row'>
-                <div>
-			<p>(TODO - Maybe better descriptions for results) Here we show some of the results from our pipeline. They depict the regression-based recovery of bird pose and shape from a single view. Each panel shows the input image and the output refined mesh.</p>
+                <div class='text-left'>
+			<p>Our single-view pipeline (shown at the top) produces good qualitative fits for a variety of poses, including asymmetric, stretched, and puffed postures and for a variety of viewpoints including views from the front and back, the sides, and from below. Each panel shows the input image and the output mesh.</p>
+                </div>
+                <div class='row'>
 	            	<img width=100% src="files/pipeline_results.png" type="image/png"/>
                 </div>
-
-                <div class='row mt-5'>
-			<p>Our mesh, pose regression networks, and single-view optimization procedure generalize to similar bird species in CUB-200 using distributions of shape and pose extracted from our multi-view dataset.</p>
+                <div class='mt-5 text-left'>
+			 <p>Our mesh, pose regression networks, and single-view optimization procedure generalize to similar bird species in CUB-200 using distributions of shape and pose extracted from our multi-view dataset.</p>
+                </div>
+                <div class='row'>
 	            	<img width=100% src="files/cub200predictions.png" type="image/png"/>
                 </div>
-            </div>
         </div>
 
         <!-- Ack -->
@@ -315,7 +316,7 @@
 		    </p>
 		    
 		    <p>
-		    	The design of this project page was based on <a href="https://www.seas.upenn.edu/~nkolot/projects/spin/">this</a> website.
+		    	The design of this project page was based on <a href="https://www.guandaoyang.com/PointFlow/">this</a> website.
 		    </p>	
 
         </div>
