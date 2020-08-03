@@ -94,6 +94,7 @@
                     </center>
                     </td>
                 </tr>
+                <tr>
                     <td width=80%>
                       <center>
                           <span style="font-size:14px"><i>We estimate the 3D pose and shape of birds from a single view. Given a detection and associated bounding box, we predict body keypoints and a mask. We then predict the parameters of an articulated avian mesh model, which provides a good initial estimate for optional further optimization.</i>
@@ -293,7 +294,15 @@
 			<p>Our single-view pipeline (shown at the top) produces good qualitative fits for a variety of poses, including asymmetric, stretched, and puffed postures and for a variety of viewpoints including views from the front and back, the sides, and from below. Each panel shows the input image and the output mesh.</p>
                 </div>
                 <div class='row'>
-	            	<img width=99% src="files/pipeline_results.png" type="image/png"/>
+                    <table align=center width=99%>
+                    <tr>
+                        <td>
+                        <center>
+	            	      <img width=100% src="files/pipeline_results.png" type="image/png"/>
+                        </center>
+                        </td>
+                    </tr>
+                    </table>
                 </div>
                 <div class='mt-5 text-left'>
 			 <p>Our mesh, pose regression networks, and single-view optimization procedure generalize to similar bird species in CUB-200 using distributions of shape and pose extracted from our multi-view dataset.</p>
