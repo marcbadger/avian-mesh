@@ -85,7 +85,7 @@
 
 			   
 	    <div class='row mt-5'>
-      		<table align=center width=800px>
+      		<table align=center width=90%>
                 <tr>
                 	<td >
                       <center>
@@ -94,7 +94,7 @@
                     </center>
                     </td>
                 </tr>
-                    <td width=600px>
+                    <td width=80%>
                       <center>
                           <span style="font-size:14px"><i>We estimate the 3D pose and shape of birds from a single view. Given a detection and associated bounding box, we predict body keypoints and a mask. We then predict the parameters of an articulated avian mesh model, which provides a good initial estimate for optional further optimization.</i>
                     </center>
@@ -179,7 +179,7 @@
             </div>
 
 			<div class='row mt-3'>
-	      		<table align=center width=1000px>
+	      		<table align=center width=99%>
 	                <tr>
 	                    <td>
 	                      <center>
@@ -188,7 +188,7 @@
 	                    </center>
 	                    </td>
 	                </tr>
-	                    <td width=800px>
+	                    <td width=80%>
 	                      <center>
 	                          <span style="font-size:14px"><i>Our dataset captures the social interactions of 15 cowbirds housed together in an outdoor aviary over the course of a three-month mating season.</i>
 	                    </center>
@@ -199,7 +199,7 @@
 
 	
 			<div class='row mt-5'>
-	      		<table align=center width=1000px>
+	      		<table align=center width=99%>
 	                <tr>
 	                    <td>
 	                      <center>
@@ -208,7 +208,7 @@
 	                    </center>
 	                    </td>
 	                </tr>
-	                    <td width=800px>
+	                    <td width=80%>
 	                      <center>
 	                          <span style="font-size:14px"><i>We provide multi-view segmentation masks for over 6300 bird instances, keypoints for 1000 bird instances, an articulated 3D mesh model of a bird, and a full pipeline for recovering the shape and pose of birds from single views. See our <a href="https://github.com/marcbadger/avian-mesh">code</a> for details.</i>
 	                    </center>
@@ -218,7 +218,7 @@
 		    </div>
 
 			<div class='row mt-5'>
-	      		<table align=center width=1000px>
+	      		<table align=center width=99%>
 	                <tr>
 	                    <td>
             	            <div class = 'row'>
@@ -232,7 +232,7 @@
 				            </div>
 	                    </td>
 	                </tr>
-	                    <td width=800px>
+	                    <td width=80%>
 	                      <center>
 	                          <span style="font-size:14px"><i>We detect bird instances using a Mask R-CNN pretrained on COCO instance segmentation, which we fine-tune for birds. Frame-by-frame predictions are stable across time and we achieve excellent generalization to unseen days and across seasons.</i>
 	                    </center>
@@ -242,7 +242,7 @@
 		    </div>
 
 			<div class='row mt-5'>
-	      		<table align=center width=1000px>
+	      		<table align=center width=99%>
 	                <tr>
 	                    <td>
 	                      <center>
@@ -251,7 +251,7 @@
 	                    </center>
 	                    </td>
 	                </tr>
-	                    <td width=800px>
+	                    <td width=80%>
 	                      <center>
 	                          <span style="font-size:14px"><i>We fit our avian mesh to the annotated multi-view dataset and extract distributions for shape and pose of birds in the aviary.</i>
 	                    </center>
@@ -293,84 +293,66 @@
 			<p>Our single-view pipeline (shown at the top) produces good qualitative fits for a variety of poses, including asymmetric, stretched, and puffed postures and for a variety of viewpoints including views from the front and back, the sides, and from below. Each panel shows the input image and the output mesh.</p>
                 </div>
                 <div class='row'>
-	            	<img width=100% src="files/pipeline_results.png" type="image/png"/>
+	            	<img width=99% src="files/pipeline_results.png" type="image/png"/>
                 </div>
                 <div class='mt-5 text-left'>
 			 <p>Our mesh, pose regression networks, and single-view optimization procedure generalize to similar bird species in CUB-200 using distributions of shape and pose extracted from our multi-view dataset.</p>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_rwb.png" type="image/png"/>
-                                <span style="font-size:14px"><i>Red-winged Blackbird</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_pb.png" type="image/png"/>
-                                <span style="font-size:14px"><i>Painted Bunting</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_rbg.png" type="image/png"/>
-                                <span style="font-size:14px"><i>Rose-breasted Grosbeak</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_eg.png" type="image/png"/>
-                                <span style="font-size:14px"><i>European Goldfinch</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_pf.png" type="image/png"/>
-                                <span style="font-size:14px"><i>Purple Finch</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 mb-4">
-                        <table align=center width=100%>
-                            <tr>
-                            <td>
-                            <center>
-                                <img width=100% src="files/cub200_separate_yhb.png" type="image/png"/>
-                                <span style="font-size:14px"><i>Yellow-headed Blackbird</i>
-                            </center>
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
+                <div class="row mb-4">
+                    <table align=center width=99%>
+                        <tr>
+                        <td>
+                        <center>
+                            <img width=100% src="files/cub200_row1.png" type="image/png"/>
+                        </center>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <center>
+                            <div class="row">
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>Red-winged Blackbird</i></span>
+                            </div>
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>Painted Bunting</i></span>
+                            </div>
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>Rose-breasted Grosbeak</i></span>
+                            </div>
+                            </div>
+                        </center>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row mb-4">
+                    <table align=center width=99%>
+                        <tr>
+                        <td>
+                        <center>
+                            <img width=100% src="files/cub200_row2.png" type="image/png"/>
+                        </center>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <center>
+                            <div class="row">
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>European Goldfinch</i></span>
+                            </div>
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>Purple Finch</i></span>
+                            </div>
+                            <div class="col-4">
+                                <span style="font-size:14px"><i>Yellow-headed Blackbird</i></span>
+                            </div>
+                            </div>
+                        </center>
+                        </td>
+                        </tr>
+                    </table>
                 </div>
                 <!--
                 <div class='row'>
