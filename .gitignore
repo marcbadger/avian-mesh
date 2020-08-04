@@ -1,0 +1,14 @@
+## Python ##
+__pycache__/
+*.py[cod]
+*$py.class
+## Jupyter Notebook ##
+.ipynb_checkpoints
+## Ignore Mac DS_Store files ##
+.DS_Store
+## Environment ##
+**/3dBird
+**/avian3d
+## Large Files ##
+models/detector.pth
+keypoint_detection/model_best.pth
