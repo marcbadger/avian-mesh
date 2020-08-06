@@ -54,35 +54,13 @@
 
 
             <!-- affiliations -->
-<!--             <div class='row text-center mt-1 mb-1' >
-		    <a class="col-md-6" href="https://www.upenn.edu/"><span><sup>1</sup>University of Pennsylvania</span></a>
-            </div> -->
-
             <div class='row mt-1 mt-2' >
                 <div class='col text-center'>
                     <p class="h5 font-weight-light">
 				    <a class="mr-4 ml-4" href="https://www.upenn.edu/" target="_blank"><span>University of Pennsylvania</span></a>
-                    <!-- <a class="mr-4 ml-4" href="https://tech.cornell.edu/"><span>Cornell Tech</span></a> -->
                     </p>
                 </div>
             </div>
-
-<!--             <table align=center width=700px>
-               <tr>
-                <td align=center width=100px>
-                <center>
-                <span style="font-size:20px"> <sup>1</sup> University of Pennsylvania<br/>In ECCV, 2020</span>
-                </center>
-                </td>
-             </tr>
-            </table> -->
-
-            <!-- contribution 
-            <div class='row text-center font-weight-light mt-2 mb-2'>
-                <span class="col-md-12 col-xs-12" style="color:#007bff">*Equal contribution</span>
-            </div>
-			-->
-
 			   
 	    <div class='row mt-5'>
       		<table align=center width=90%>
@@ -126,7 +104,7 @@
                             <a class="h5" href="https://github.com/marcbadger/avian-mesh" target="_blank" style="margin-right:10px">
                                 <span>[Code]</span>
                             </a>
-                            <a class="h5" href="files/.bib" target="_blank">
+                            <a class="h5" href="files/badger2020.bib" target="_blank">
                                 <span>[Bibtex]</span>
                             </a>
                         </div>
@@ -145,32 +123,29 @@
             </div>
         </div>
 
-        <!-- Youtube Video
+        <!-- Overview -->
         <div>
             <hr>
-
             <div class='row text-center'>
                 <div class='col'>
-                    <p class='h2 mr-3'>Video</p>
+                    <p class='h2'>Overview</p>
                 </div>
             </div>
 
-
-            <div class='row mt-3 text-center center-block' style=" margin-left:auto; margin-right:auto; max-width:560px">
-                <div class='col ml-1 mr-1' style="position: relative; width: 100%;height: 0;padding-bottom: 56%;">
-                    <iframe 
-                        src="https://www.youtube.com/embed/jqBiv77xC0M" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        style="position: absolute;width: 100%;height: 100%; left: 0; top: 0;"
-                    >
-                    </iframe>
+            <div class='row mt-3'>
+            
+                <div class='col'>
+                    <center>
+                        <video controls width=80% poster="files/video_thumbnail.png" src="files/Badger_2897_short.mp4" type="video/mp4"/>
+                    </center>
                 </div>
+               
             </div>
+
 
         </div>
-	-->
 
+        <!-- Dataset and Approach -->
         <div>
             <hr>
             <div class='row text-center'>
@@ -184,7 +159,6 @@
 	                <tr>
 	                    <td>
 	                      <center>
-	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
 	      	    				<video width=100% src="files/timelapse.mp4" type="video/mp4" autoplay muted loop/>
 	                    </center>
 	                    </td>
@@ -204,7 +178,6 @@
 	                <tr>
 	                    <td>
 	                      <center>
-	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
 	                      	  <img width=100% src="files/dataset_w_mask.png" type="image/png"/>
 	                    </center>
 	                    </td>
@@ -247,7 +220,6 @@
 	                <tr>
 	                    <td>
 	                      <center>
-	                          <!-- <a href="files/teaser.png"><img src = "files/teaser.png" height="250px"></img></href></a><br> -->
 	      	    				<video width=100% src="files/multiview.mp4" type="video/mp4" autoplay muted loop/>
 	                    </center>
 	                    </td>
@@ -262,27 +234,7 @@
 		    </div>
         </div>
 
-        <!-- Architecture, explaination -->
-        <div>
-            <hr>
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2'>Overview</p>
-                </div>
-            </div>
-
-            <div class='row mt-3'>
-            
-	            <div>
-	      	    	<video controls width=100% src="files/teaser.mp4" type="video/mp4"/>
-		    	</div>
-	           
-            </div>
-
-
-        </div>
-
-        <!-- Results, transformation -->
+        <!-- Results -->
         <div>
             <hr>
             <div class='row text-center'>
@@ -363,11 +315,31 @@
                         </tr>
                     </table>
                 </div>
-                <!--
-                <div class='row'>
-	            	<img width=100% src="files/cub200predictions.png" type="image/png"/>
+        </div>
+
+        <!-- Youtube Video -->
+        <div>
+            <hr>
+
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2 mr-3'>Video</p>
                 </div>
-                -->
+            </div>
+
+
+            <div class='row mt-3 text-center center-block' style=" margin-left:auto; margin-right:auto">
+                <div class='col ml-1 mr-1' style="position: relative; width: 100%;height: 0;padding-bottom: 56%;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/M_tVMaj33pg" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        style="position: absolute;width: 100%;height: 100%; left: 0; top: 0;"
+                    >
+                    </iframe>
+                </div>
+            </div>
+
         </div>
 
         <!-- Ack -->
