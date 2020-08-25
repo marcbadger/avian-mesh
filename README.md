@@ -1,7 +1,7 @@
 # avian-mesh
 Code repository for the paper: \
 **3D Bird Reconstruction: a Dataset, Model, and Shape Recovery from a Single View**  
-[Marc Badger](https://www.ocf.berkeley.edu/~badger/), [Yufu Wang](https://www.grasp.upenn.edu/people/yufu-wang), [Adarsh Modh](https://www.seas.upenn.edu/~adarshm/), [Ammon Perkes](https://aperkes.github.io), [Nikos Kolotouros](https://www.seas.upenn.edu/~nkolot/), [Bernd Pfrommer](http://pfrommer.us), [Marc Schmidt](https://web.sas.upenn.edu/marcschmidtlab/pages/people/), [Kostas Daniilidis](https://www.cis.upenn.edu/~kostas/) \
+[Marc Badger](https://www.ocf.berkeley.edu/~badger/), [Yufu Wang](https://yufu-wang.github.io), [Adarsh Modh](https://www.seas.upenn.edu/~adarshm/), [Ammon Perkes](https://aperkes.github.io), [Nikos Kolotouros](https://www.seas.upenn.edu/~nkolot/), [Bernd Pfrommer](http://pfrommer.us), [Marc Schmidt](https://web.sas.upenn.edu/marcschmidtlab/pages/people/), [Kostas Daniilidis](https://www.cis.upenn.edu/~kostas/) \
 ECCV 2020 \
 [[Project Page](https://marcbadger.github.io/avian-mesh/)]
 
