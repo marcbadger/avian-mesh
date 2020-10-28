@@ -1,3 +1,4 @@
+********* Project Guide**********
 # avian-mesh
 Code repository for the paper: \
 **3D Bird Reconstruction: a Dataset, Model, and Shape Recovery from a Single View**  
